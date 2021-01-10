@@ -1,14 +1,14 @@
 {
     "laws": [
         {
-            government: "Federal",
-            law: "Freedom of Information Act",
-            shortLaw: "FOIA"
+            "government": "Federal",
+            "law": "Freedom of Information Act",
+            "shortLaw": "FOIA"
         },
         {
-            government: "New York State",
-            law: "Freedom of Information Law",
-            shortLaw: "FOIL"
+            "government": "New York State",
+            "law": "Freedom of Information Law",
+            "shortLaw": "FOIL"
         }
     ]
 }
