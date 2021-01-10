@@ -3,7 +3,7 @@
     "laws": {
         "foia": {
             "name": "Freedom of Information Act",
-            "government": "Federal"
+            "government": "Federal Government"
         },
         "foil": {
             "name": "Freedom of Information Law",
@@ -16,7 +16,8 @@
             "required": true,
             "placeholder": "Name",
             "type": "text",
-            "label": "Full Name"
+            "label": "Full Name",
+            "classList": ""
         },
         {
             "name": "email",
@@ -25,7 +26,8 @@
             "type": "text",
             "label": "Email Address",
             "validation": "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])",
-            "validationError": "Please enter a valid email addess."
+            "validationError": "Please enter a valid email addess.",
+            "classList": ""
         },
         {
             "name": "organization",
@@ -34,7 +36,8 @@
             "type": "text",
             "label": "Organization/Affiliation",
             "length": 50,
-            "lengthError": "Summary must be between 1-50 characters."
+            "lengthError": "Summary must be between 1-50 characters.",
+            "classList": ""
         },
         {
             "name": "summary",
@@ -43,7 +46,8 @@
             "type": "text",
             "label": "Summary",
             "length": 50,
-            "lengthError": "Summary must be between 1-50 characters."
+            "lengthError": "Summary must be between 1-50 characters.",
+            "classList": ""
         },
         {
             "name": "request",
@@ -52,7 +56,8 @@
             "type": "textarea",
             "label": "Request Details",
             "length": 1000,
-            "lengthError": "Requested documents must be between 1-1000 characters."
+            "lengthError": "Requested documents must be between 1-1000 characters.",
+            "classList": ""
         },
         {
             "name": "requester",
@@ -66,14 +71,16 @@
                 "Researcher",
                 "Commercial Business",
                 "Non-Commercial Business"
-            ]
+            ],
+            "classList": ""
         },
         {
             "name": "max-fee",
             "required": true,
-            "placeholder": "$0.00",
+            "placeholder": "25",
             "type": "number",
-            "label": "Max. Acceptable Fee"
+            "label": "Max. Acceptable Fee",
+            "classList": "fee"
         }
     ]
 }
