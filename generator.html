@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FOI Generator</title>        
+        <link rel="icon" href="images/favicon.png">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="darkmode/darkmode.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    </head>
+    <body>        
+        <script src="darkmode/darkmode.js"></script>
+        
+        <h1 class="title"></h1>
+        <h2 class="government"></h2>
+        
+        <form method="get" onsubmit="return false;">
+            <h3>Settings</h3>
+            <div class="line"></div>
+            
+            <button class="generate-button" type="submit">Generate</button>
+        </form>
+        
+        <div style="display: none;" class="overlay">
+            <div id="result">
+                <h4>Result</h4>
+                <textarea readonly></textarea>
+                <div class="buttons">
+                    <button type="button" class="return">Return</button>
+                    <button type="button" class="copy">Copy to Clipboard</button>
+                </div>
+            </div>
+        </div>
+        
+        <a href="index.html" id="back-button"><span class="arrow"></span>Back</a>
+    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/interpreter.js"></script>
+    <script src="js/generator.js"></script>
+</html>
